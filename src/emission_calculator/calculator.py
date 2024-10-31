@@ -1,10 +1,11 @@
 from pandas import DataFrame
 
-from plotly.subplots import make_subplots
 from plotly.graph_objects import Figure, Pie, Bar, Scatter
 
 
 def draw_report_figure(df: DataFrame) -> Figure:
+    from plotly.subplots import make_subplots
+
     figure_specs = [
         [{"type": "xy"}, {"type": "xy"}],
         [{"type": "domain"}, None],
