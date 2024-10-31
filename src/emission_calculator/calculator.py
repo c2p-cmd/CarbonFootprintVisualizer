@@ -127,7 +127,7 @@ def make_dataframe(
     avg_gas_bill: float,
     avg_transport_bill: float,
     monthly_waste_generated: float,
-    recycled_waster_percent: float,
+    recycled_waste_percent: float,
     annual_travel_kms: float,
     fuel_efficiency: float,
 ) -> DataFrame:
@@ -136,7 +136,7 @@ def make_dataframe(
         + (avg_gas_bill * 12 * 5.3e-3)
         + (avg_transport_bill * 12 * 2.32)
     )
-    waste_generated = monthly_waste_generated * 12 * 0.57 - recycled_waster_percent
+    waste_generated = monthly_waste_generated * 12 * 0.57 - recycled_waste_percent
     business_travel = annual_travel_kms * 1 / fuel_efficiency * 2.31
 
     return DataFrame(
