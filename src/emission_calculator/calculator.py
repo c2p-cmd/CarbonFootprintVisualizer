@@ -78,7 +78,7 @@ def draw_report_figure(df: DataFrame) -> Figure:
 
     # Update layout for axes and overall layout
     fig.update_layout(
-        title_text=f"Carbon Footprint of {df['Name']}",
+        title_text=f"Carbon Footprint of {df['Name'][0]}",
         plot_bgcolor="white",
         legend_title_text="Breakdown",
         xaxis_title="Emission Category",
