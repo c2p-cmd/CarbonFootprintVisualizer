@@ -1,0 +1,110 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="U7t47lqXsrcZqBkQWg_L">
+    <mxGraphModel dx="1026" dy="1765" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Hy_VaKmW5_GkMQz66k2Z-27" value="&lt;div&gt;Component Diagram&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="353" y="-520" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QEWqBoXuelxvLnv4VFpo-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="QEWqBoXuelxvLnv4VFpo-18" target="QEWqBoXuelxvLnv4VFpo-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QEWqBoXuelxvLnv4VFpo-18" value="Single CSV File" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="-960" width="75" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="QEWqBoXuelxvLnv4VFpo-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="QEWqBoXuelxvLnv4VFpo-24" target="QEWqBoXuelxvLnv4VFpo-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QEWqBoXuelxvLnv4VFpo-20" value="&lt;div&gt;Store/Retrieve Data&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="QEWqBoXuelxvLnv4VFpo-19" vertex="1" connectable="0">
+          <mxGeometry x="-0.1333" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RPsu52ZOZbeUCmrFL9Vv-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="QEWqBoXuelxvLnv4VFpo-24" target="RPsu52ZOZbeUCmrFL9Vv-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RPsu52ZOZbeUCmrFL9Vv-6" value="Generated Report" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RPsu52ZOZbeUCmrFL9Vv-5">
+          <mxGeometry x="-0.051" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QEWqBoXuelxvLnv4VFpo-24" value="Gradio Web-App" style="shape=ellipse;html=1;dashed=0;whiteSpace=wrap;perimeter=ellipsePerimeter;" parent="1" vertex="1">
+          <mxGeometry x="350" y="-790" width="95" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="QEWqBoXuelxvLnv4VFpo-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;" parent="1" source="QEWqBoXuelxvLnv4VFpo-27" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="-640" as="sourcePoint" />
+            <mxPoint x="360" y="-750" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="130" y="-750" />
+              <mxPoint x="245" y="-750" />
+              <mxPoint x="245" y="-749" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QEWqBoXuelxvLnv4VFpo-26" value="Submit Carbon Emission form" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="QEWqBoXuelxvLnv4VFpo-25" vertex="1" connectable="0">
+          <mxGeometry x="0.2303" y="-5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QEWqBoXuelxvLnv4VFpo-27" value="&lt;div&gt;User/Client&lt;/div&gt;" style="html=1;dashed=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="30" y="-771" width="100" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="QEWqBoXuelxvLnv4VFpo-29" value="&lt;div&gt;Admin/Company &lt;br&gt;&lt;/div&gt;" style="html=1;dashed=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="680" y="-780" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QEWqBoXuelxvLnv4VFpo-30" value="&lt;div&gt;Carbon Footprint Report Generator Web-App&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry y="-1080" width="790" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QEWqBoXuelxvLnv4VFpo-31" value="&lt;div&gt;Data Flow&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="345" y="-1020" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RPsu52ZOZbeUCmrFL9Vv-1" value="User Report (PDF)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="-670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RPsu52ZOZbeUCmrFL9Vv-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.1;entryY=0.62;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="QEWqBoXuelxvLnv4VFpo-24" target="QEWqBoXuelxvLnv4VFpo-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RPsu52ZOZbeUCmrFL9Vv-3" value="View Other Company Data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RPsu52ZOZbeUCmrFL9Vv-2">
+          <mxGeometry x="0.0128" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RPsu52ZOZbeUCmrFL9Vv-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RPsu52ZOZbeUCmrFL9Vv-7" target="RPsu52ZOZbeUCmrFL9Vv-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RPsu52ZOZbeUCmrFL9Vv-7" value="Gradio App" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="-410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RPsu52ZOZbeUCmrFL9Vv-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RPsu52ZOZbeUCmrFL9Vv-8" target="RPsu52ZOZbeUCmrFL9Vv-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RPsu52ZOZbeUCmrFL9Vv-8" value="Input Validation" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="-410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RPsu52ZOZbeUCmrFL9Vv-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RPsu52ZOZbeUCmrFL9Vv-9" target="RPsu52ZOZbeUCmrFL9Vv-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RPsu52ZOZbeUCmrFL9Vv-9" value="Emission&lt;div&gt;Calculations&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="-410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RPsu52ZOZbeUCmrFL9Vv-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RPsu52ZOZbeUCmrFL9Vv-10" target="RPsu52ZOZbeUCmrFL9Vv-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RPsu52ZOZbeUCmrFL9Vv-10" value="Visualiztion" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="-410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RPsu52ZOZbeUCmrFL9Vv-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="RPsu52ZOZbeUCmrFL9Vv-11" target="RPsu52ZOZbeUCmrFL9Vv-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RPsu52ZOZbeUCmrFL9Vv-11" value="Report Generator" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="-410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RPsu52ZOZbeUCmrFL9Vv-12" value="User Data in CSV" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="-280" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
