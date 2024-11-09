@@ -58,10 +58,6 @@ python ./src/app.py
 - Annual Business Travel (km)
 - Vehicle Fuel Efficiency (L/100 km)
 
-## ✨ Other Features
-
-- Historical data tracking
-
 ## 📄 License
 
 [MIT](./LICENSE)
