@@ -1,6 +1,7 @@
 from random import choice
-from emission_calculator.calculator import make_dataframe
-from pandas import DataFrame, concat
+from emission_calculator.calculator import make_dataframe, dataframe_to_dict
+from pandas import DataFrame
+from csv import DictWriter
 
 company_types = ["small", "medium", "large"]
 
@@ -90,7 +91,7 @@ def vehicle_fuel_efficiency(company_type: str) -> range:
 
 
 def generate_dummy_data(company_count: int = 10):
-    data: list[DataFrame] = []
+    data: list[dict] = []
     for i in range(company_count):
         company_type = company_types[choice(range(len(company_types)))]
         df: DataFrame = make_dataframe(
@@ -103,9 +104,12 @@ def generate_dummy_data(company_count: int = 10):
             annual_travel_kms=choice(travel_kms(company_type)),
             fuel_efficiency=choice(vehicle_fuel_efficiency(company_type)),
         )
-        data.append(df)
+        data.append(dataframe_to_dict(df))
 
-    concat(data, ignore_index=True).to_csv("./reports/dummy_data.csv", index=False)
+    with open("./reports/dummy_data.csv", "w") as f:
+        w = DictWriter(f, fieldnames=data[0].keys())
+        w.writeheader()
+        w.writerows(data)
 
 
 if __name__ == "__main__":
