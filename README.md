@@ -60,4 +60,4 @@ python ./src/app.py
 
 ## 📄 License
 
-[MIT](./LICENSE)
+[Apache](./LICENSE)
