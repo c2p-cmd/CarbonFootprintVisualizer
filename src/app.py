@@ -183,7 +183,7 @@ def create_carbon_footprint_app() -> gr.Blocks:
                             info="Required: Full legal company name",
                         )
                     with gr.Row():
-                        with gr.Column(variant="compact"):
+                        with gr.Column(variant="panel"):
                             avg_electric_bill = gr.Number(
                                 value=1.0,
                                 label="Average Electricity Bill (€)",
@@ -202,36 +202,37 @@ def create_carbon_footprint_app() -> gr.Blocks:
                                 info="Monthly Fuel bill for transport",
                             )
 
-                        with gr.Column(variant="compact"):
-                            annual_travel_kms = gr.Number(
-                                value=1.0,
-                                label="Annual Business Travel (km)",
-                                minimum=0.01,
-                                info="Total kilometers traveled by employees",
-                            )
-                            fuel_efficiency = gr.Number(
-                                value=1.0,
-                                label="Vehicle Fuel Efficiency (L/100 km)",
-                                minimum=0.01,
-                                info="Average fleet fuel consumption",
-                            )
+                        with gr.Row(variant="panel"):
+                            with gr.Column(variant="compact"):
+                                annual_travel_kms = gr.Number(
+                                    value=1.0,
+                                    label="Annual Business Travel (km)",
+                                    minimum=0.01,
+                                    info="Total kilometers traveled by employees",
+                                )
+                                fuel_efficiency = gr.Number(
+                                    value=1.0,
+                                    label="Vehicle Fuel Efficiency (L/100 km)",
+                                    minimum=0.01,
+                                    info="Average fleet fuel consumption",
+                                )
 
-                        with gr.Column(variant="compact"):
-                            monthly_waste_generated = gr.Number(
-                                value=1.0,
-                                label="Monthly Waste Generated (kg)",
-                                minimum=0.01,
-                                info="Total waste produced monthly",
-                            )
-                            recycled_waste_percent = gr.Number(
-                                value=0.0,
-                                label="Recycled Waste (%)",
-                                minimum=0.0,
-                                maximum=100.0,
-                                info="Percentage of waste recycled",
-                            )
+                            with gr.Column(variant="compact"):
+                                monthly_waste_generated = gr.Number(
+                                    value=1.0,
+                                    label="Monthly Waste Generated (kg)",
+                                    minimum=0.01,
+                                    info="Total waste produced monthly",
+                                )
+                                recycled_waste_percent = gr.Number(
+                                    value=0.0,
+                                    label="Recycled Waste (%)",
+                                    minimum=0.0,
+                                    maximum=100.0,
+                                    info="Percentage of waste recycled",
+                                )
 
-                with gr.Column(scale=1):
+                with gr.Column(scale=2):
                     output_plot = gr.HTML(label="Carbon Footprint Report")
                     # Create a row for buttons
                     with gr.Row():
