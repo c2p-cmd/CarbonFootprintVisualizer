@@ -5,7 +5,7 @@ from plotly.graph_objects import Figure, Pie, Bar, Scatter, Scatterpolar
 
 
 def draw_report_figure(
-    df: DataFrame, threshold: tuple[float] = [30_000, 5_000, 15_000]
+    df: DataFrame, threshold: tuple[float] = [15_000, 5_000, 15_000]
 ) -> Figure:
     figure_specs = [
         [{"type": "xy"}, {"type": "domain"}],
