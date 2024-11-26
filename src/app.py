@@ -71,6 +71,16 @@ def validate_input(
             raise gr.Error(
                 "Monthly waste generation seems extremely high. Please verify!"
             )
+        
+        if name == "Fuel Efficiency" :
+            if float_val < 5:
+                raise gr.Error(
+                    "Fuel efficiency seems unrealistically low. Please verify!"
+                )
+            if float_val > 15:
+                raise gr.Error(
+                    "Fuel efficiency is very high. Please verify!"
+                )
 
     # Percentage-specific validation
     try:
@@ -79,7 +89,7 @@ def validate_input(
         raise gr.Error("Recycled waste percentage must be a valid number!")
 
     if recycled_percent < 0 or recycled_percent > 100:
-        raise gr.Error("Recycled waste percentage must be between 0 and 100!")
+        raise gr.Error("Recycled waste percentage must be between 1 and 100!")
 
 
 def compute(
